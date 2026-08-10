@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== TÍTULO E DESCRIÇÃO ===== -->
+    <title>Keler Mendes | Advocacia e Imóveis em Maceió/AL</title>
+    <meta name="description" content="Dra. Christine Keler de Lima Mendes – OAB/AL 7011. Especialista em Direito Civil, Patrimonial e Regularização de Imóveis. Correspondente Jurídica em Maceió/AL. Agende sua consulta." />
+    <meta name="keywords" content="advocacia Maceió, direito civil, regularização de imóveis, direito patrimonial, correspondente jurídica, Keler Mendes, OAB/AL 7011" />
+    <meta name="author" content="Keler Mendes Advocacia" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.keleradvocacia.com.br/" />
+
+    <!-- ===== FAVICON / ÍCONES ===== -->
+    <!-- Favicon genérico (para substituir, crie um arquivo .ico ou use um serviço) -->
+    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <!-- PNG para navegadores modernos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <!-- Apple Touch Icon (para iOS) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <!-- Manifest (para PWA/Android) -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Meta tags para cor do tema (navegadores mobile) -->
+    <meta name="theme-color" content="#0c1a2e" />
+    <meta name="msapplication-TileColor" content="#0c1a2e" />
+
+    <!-- ===== OPEN GRAPH (Facebook, LinkedIn, etc.) ===== -->
+    <meta property="og:title" content="Keler Mendes | Advocacia e Imóveis em Maceió/AL" />
+    <meta property="og:description" content="Dra. Christine Keler de Lima Mendes – OAB/AL 7011. Especialista em Direito Civil, Patrimonial e Regularização de Imóveis. Correspondente Jurídica em Maceió/AL." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.keleradvocacia.com.br/" />
+    <meta property="og:image" content="https://www.keleradvocacia.com.br/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Keler Mendes Advocacia" />
+
+    <!-- ===== TWITTER CARDS ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Keler Mendes | Advocacia e Imóveis em Maceió/AL" />
+    <meta name="twitter:description" content="Dra. Christine Keler de Lima Mendes – OAB/AL 7011. Especialista em Direito Civil, Patrimonial e Regularização de Imóveis." />
+    <meta name="twitter:image" content="https://www.keleradvocacia.com.br/img/og-image.jpg" />
+    <meta name="twitter:site" content="@kelermendes" />
+    <meta name="twitter:creator" content="@kelermendes" />
+
+    <!-- ===== OUTROS META ===== -->
+    <meta name="geo.region" content="BR-AL" />
+    <meta name="geo.placename" content="Maceió" />
+    <meta name="geo.position" content="-9.665; -35.735" />
+    <meta name="ICBM" content="-9.665, -35.735" />
+
+    <!-- ===== BOOTSTRAP 5 + ICONS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- ===== SWEETALERT2 ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- ===== CSS PRÓPRIO ===== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ===== ESTRUTURA DE DADOS (JSON-LD) ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            "name": "Keler Mendes Advocacia",
+            "description": "Dra. Christine Keler de Lima Mendes – OAB/AL 7011. Especialista em Direito Civil, Patrimonial e Regularização de Imóveis.",
+            "url": "https://www.keleradvocacia.com.br/",
+            "telephone": "+55-82-99582-2848",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Maceió",
+                "addressRegion": "AL",
+                "addressCountry": "BR"
+            },
+            "openingHours": "Mo-Fr 09:00-18:00",
+            "priceRange": "$$",
+            "sameAs": [
+                "https://br.linkedin.com/in/keler-mendes-b8272197",
+                "https://www.instagram.com/kelermendes/",
+                "https://www.facebook.com/keler.mendes/"
+            ]
+        }
+    </script>
+</head>
+<body>
+
+    <!-- ============================================================
+    NAVBAR
+    ============================================================ -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand logo" href="#hero">Keler <span>Mendes</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#espaco">Espaço Keler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#credentials">Credenciais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link btn-cta" href="#contact">Agendar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7 text-white">
+                    <div class="hero-content">
+                        <p class="subtitle text-gold fw-light mb-2">Dra. Christine Keler de Lima Mendes</p>
+                        <h1 class="display-3 fw-bold mb-3">Direito Civil, Patrimonial <br /><span class="text-gold">e Regularização de Imóveis</span></h1>
+                        <p class="lead mb-4">
+                            Fundadora e Presidente da Keler Mendes Advocacia.<br />
+                            Correspondente Jurídica em Maceió/AL • OAB/AL 7011
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge badge-gold"><i class="bi bi-check-circle-fill me-1"></i> OAB/AL 7011</span>
+                            <span class="badge badge-gold"><i class="bi bi-gavel me-1"></i> 20+ anos</span>
+                            <span class="badge badge-gold"><i class="bi bi-mortarboard-fill me-1"></i> Mestrado PUC/PR</span>
+                        </div>
+                        <a href="#contact" class="btn btn-gold btn-lg px-5"><i class="bi bi-calendar-check me-2"></i>Agendar Consulta</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                    <div class="hero-circle" role="img" aria-label="Foto da Dra. Keler Mendes com a balança da justiça"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator d-none d-md-flex">
+            <span>Deslize</span>
+            <i class="bi bi-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SOBRE
+    ============================================================ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold">Sobre Keler Mendes</h2>
+                    <div class="divider-gold my-3"></div>
+                    <p class="text-muted mb-4">
+                        <strong>Dra. Christine Keler de Lima Mendes</strong> – <strong>OAB/AL 7011</strong> – é uma advogada reconhecida em Maceió/AL,
+                        com atuação consolidada em <strong>Direito Civil, Patrimonial e Regularização de Imóveis</strong>.
+                        É fundadora e presidente do escritório <strong>Keler Mendes Advocacia</strong>, além de atuar como
+                        <strong>Correspondente Jurídica</strong> na capital alagoana.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Possui <strong>Mestrado em Direito Econômico e Socioambiental</strong> pela
+                        Pontifícia Universidade Católica do Paraná (PUC/PR), além de pós-graduações em
+                        Direito Civil e Docência no Ensino Superior.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Atualmente, é <strong>Coordenadora do curso de Direito e do Núcleo de Prática Jurídica</strong>
+                        da Faculdade Anhanguera de Maceió/AL, além de docente em outras instituições de ensino superior.
+                    </p>
+                    <div class="row g-4 mt-3">
+                        <div class="col-6 col-md-3">
+                            <div class="stat-box">
+                                <h3 class="h2 text-navy">OAB/AL</h3>
+                                <p class="text-muted small">7011</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-box">
+                                <h3 class="h2 text-navy">M.Sc.</h3>
+                                <p class="text-muted small">PUC/PR</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-box">
+                                <h3 class="h2 text-navy">20+</h3>
+                                <p class="text-muted small">Anos</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-box">
+                                <h3 class="h2 text-navy">Coord.</h3>
+                                <p class="text-muted small">Anhanguera</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-image-box" role="img" aria-label="Dra. Keler Mendes em seu escritório, transmitindo confiança e transparência"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ESPECIALIDADES
+    ============================================================ -->
+    <section class="section bg-light" id="services">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Áreas de Atuação</h2>
+                <div class="divider-gold mx-auto my-3"></div>
+                <p class="text-muted">Direito Civil, Patrimonial e Regularização de Imóveis com excelência e transparência.</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="icon-box mx-auto"><i class="bi bi-briefcase"></i></div>
+                            <h5 class="card-title">Direito Civil</h5>
+                            <p class="card-text text-muted small">Consultoria e contencioso em questões cíveis, contratos, responsabilidade civil e mais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="icon-box mx-auto"><i class="bi bi-shield-check"></i></div>
+                            <h5 class="card-title">Direito Patrimonial</h5>
+                            <p class="card-text text-muted small">Blindagem patrimonial, planejamento sucessório e auditoria de legados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="icon-box mx-auto"><i class="bi bi-building"></i></div>
+                            <h5 class="card-title">Regularização de Imóveis</h5>
+                            <p class="card-text text-muted small">Regularização documental, usucapião, inventários e assessoria em transações.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card service-card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="icon-box mx-auto"><i class="bi bi-people"></i></div>
+                            <h5 class="card-title">Correspondente Jurídica</h5>
+                            <p class="card-text text-muted small">Atuação ágil e compromissada em Maceió/AL para todas as demandas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ESPAÇO KELER
+    ============================================================ -->
+    <section class="section" id="espaco">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold">Espaço <span class="text-gold">Keler Mendes</span></h2>
+                    <div class="divider-gold my-3"></div>
+                    <p class="text-muted mb-4">
+                        <strong>Além da advocacia, a Dra. Keler Mendes também atua no mercado imobiliário</strong>,
+                        oferecendo imóveis para <strong>locação</strong> em Maceió e região.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Com a mesma seriedade e transparência que marcam sua carreira jurídica, o
+                        <strong>Espaço Keler Mendes</strong> disponibiliza opções de imóveis residenciais e comerciais
+                        para quem busca qualidade, segurança e confiança na hora de alugar.
+                    </p>
+                    <p class="text-muted mb-4">
+                        <i class="bi bi-whatsapp text-gold me-2"></i><strong>WhatsApp (Imóveis):</strong> (82) 98739-2915
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="https://wa.me/5582987392915?text=Olá%20Dra.%20Keler%2C%20gostaria%20de%20informações%20sobre%20imóveis%20para%20locação." class="btn btn-gold" target="_blank" aria-label="Falar sobre imóveis pelo WhatsApp">
+                            <i class="bi bi-whatsapp me-2"></i>Falar sobre imóveis
+                        </a>
+                        <a href="https://www.facebook.com/espacokelermendes/" class="btn btn-outline-secondary" target="_blank" aria-label="Acompanhar o Espaço Keler no Facebook">
+                            <i class="bi bi-facebook me-2"></i>Acompanhar no Facebook
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="espaco-image-box">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CREDENCIAIS
+    ============================================================ -->
+    <section class="section bg-navy text-white" id="credentials">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Credenciais Acadêmicas e Profissionais</h2>
+                <div class="divider-gold mx-auto my-3"></div>
+                <p class="text-white-50">Formação robusta e atuação de excelência no mercado jurídico.</p>
+            </div>
+            <div class="row g-5 text-center">
+                <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="credential-card">
+                        <h3 class="display-4 text-gold">OAB/AL</h3>
+                        <p class="text-white-50">7011 • Inscrição regular</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="credential-card">
+                        <h3 class="display-4 text-gold">M.Sc.</h3>
+                        <p class="text-white-50">Mestre em Direito Econômico e Socioambiental - PUC/PR</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="credential-card">
+                        <h3 class="display-4 text-gold">Pós</h3>
+                        <p class="text-white-50">Especialização em Direito Civil e Docência no Ensino Superior</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="credential-card">
+                        <h3 class="display-4 text-gold">Coord.</h3>
+                        <p class="text-white-50">Curso de Direito e NPJ - Faculdade Anhanguera Maceió</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTATO
+    ============================================================ -->
+    <section class="section bg-light" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold">Vamos conversar?</h2>
+                    <div class="divider-gold my-3"></div>
+                    <p class="text-muted mb-4">
+                        Agende uma consulta para tratar de questões cíveis, patrimoniais, regularização de imóveis
+                        ou para conhecer as opções de imóveis para locação.
+                    </p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3"><i class="bi bi-whatsapp text-gold me-2"></i><strong>Advocacia:</strong> (82) 99582-2848</li>
+                        <li class="mb-3"><i class="bi bi-whatsapp text-gold me-2"></i><strong>Imóveis (Espaço Keler):</strong> (82) 98739-2915</li>
+                        <li class="mb-3"><i class="bi bi-envelope text-gold me-2"></i><strong>Email:</strong> keler@keleradvocacia.com.br</li>
+                        <li class="mb-3"><i class="bi bi-geo-alt text-gold me-2"></i><strong>Endereço:</strong> Maceió, Alagoas - AL</li>
+                    </ul>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="https://br.linkedin.com/in/keler-mendes-b8272197" target="_blank" class="social-icon" aria-label="LinkedIn da Dra. Keler Mendes"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/kelermendes/" target="_blank" class="social-icon" aria-label="Instagram da Dra. Keler Mendes"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/keler.mendes/" target="_blank" class="social-icon" aria-label="Facebook pessoal da Dra. Keler Mendes"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.facebook.com/espacokelermendes/" target="_blank" class="social-icon" aria-label="Facebook do Espaço Keler Mendes"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form class="bg-white p-4 rounded-4 shadow-sm" id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Seu nome completo" aria-label="Seu nome completo" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Seu melhor e-mail" aria-label="Seu melhor e-mail" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Seu telefone com WhatsApp" aria-label="Seu telefone com WhatsApp" />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Como posso ajudar você? Fale sobre seu caso ou sobre imóveis..." aria-label="Mensagem para a Dra. Keler"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold w-100 py-3"><i class="bi bi-send me-2"></i>Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    LOCALIZAÇÃO
+    ============================================================ -->
+    <section class="section" id="localizacao">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Onde Estamos</h2>
+                <div class="divider-gold mx-auto my-3"></div>
+                <p class="text-muted">Estamos localizados em Maceió/AL. Conheça nosso escritório e agende sua visita.</p>
+            </div>
+            <div class="mapa-container" data-aos="fade-up" data-aos-delay="100">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.1077056060667!2d-35.72583638876718!3d-9.671837902200817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145639d2941d7%3A0x4ceb7ff3cd485249!2sFontan%20%26%20Lins%20Advogados!5e0!3m2!1spt-PT!2sbr!4v1681755514474!5m2!1spt-PT!2sbr" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa do escritório Keler Mendes Advocacia">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <a href="#" class="navbar-brand logo">Keler <span>Mendes</span></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="mb-0 small">&copy; 2026 Keler Mendes Advocacia &amp; Espaço Keler.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="https://br.linkedin.com/in/keler-mendes-b8272197" target="_blank" class="text-white-50 me-2" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/kelermendes/" target="_blank" class="text-white-50 me-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/keler.mendes/" target="_blank" class="text-white-50 me-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/espacokelermendes/" target="_blank" class="text-white-50" aria-label="Facebook Espaço Keler"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    WHATSAPP FLOAT
+    ============================================================ -->
+    <a href="https://wa.me/558299582848?text=Olá%20Dra.%20Keler%2C%20gostaria%20de%20agendar%20uma%20consulta%20ou%20saber%20sobre%20imóveis." class="whatsapp-float" target="_blank" aria-label="Fale com a Dra. Keler pelo WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- ============================================================
+    POPUP – APENAS IMAGEM DE FUNDO + BOTÃO AGENDAR
+    ============================================================ -->
+    <div class="modal fade" id="popupWelcome" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content popup-modal-content">
+                <!-- A imagem de fundo é aplicada via CSS -->
+                <div class="popup-overlay">
+                    <!-- Botão fechar (X) -->
+                    <button type="button" class="popup-close" data-bs-dismiss="modal" aria-label="Fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+
+                    <!-- ÚNICO ELEMENTO: BOTÃO DE AÇÃO -->
+                    <div class="popup-btn-wrapper">
+                        <h1>Não Perca tempo <br/> agende agora mesmo</h1>
+                        <a href="#contact" class="btn btn-gold btn-lg px-5" data-bs-dismiss="modal">
+                            <i class="bi bi-calendar-check me-2"></i>Agendar Consulta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function() {
+            'use strict';
+
+            // ---------- PARALLAX ----------
+            const heroBg = document.querySelector('.hero-bg');
+            let scrollY = 0;
+            let currentTranslate = 0;
+
+            function updateParallax() {
+                if (!heroBg) return;
+                const translateY = scrollY * 0.3;
+                if (Math.abs(translateY - currentTranslate) > 0.5) {
+                    heroBg.style.transform = 'translate3d(0, ' + translateY + 'px, 0)';
+                    currentTranslate = translateY;
+                }
+            }
+
+            window.addEventListener('scroll', function() {
+                scrollY = window.pageYOffset || document.documentElement.scrollTop;
+                requestAnimationFrame(updateParallax);
+            }, { passive: true });
+
+            // ---------- NAVBAR SCROLL EFFECT ----------
+            const nav = document.getElementById('mainNav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 80) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            // ---------- SCROLL REVEAL (Intersection Observer) ----------
+            const animateElements = document.querySelectorAll('[data-aos]');
+            const observerOptions = {
+                threshold: 0.15,
+                rootMargin: '0px 0px -30px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const delay = parseInt(el.getAttribute('data-aos-delay')) || 0;
+                        setTimeout(() => {
+                            el.classList.add('aos-animate');
+                        }, delay);
+                        observer.unobserve(el);
+                    }
+                });
+            }, observerOptions);
+
+            animateElements.forEach(el => observer.observe(el));
+
+            // ---------- SUAVIZAÇÃO DE LINKS INTERNOS ----------
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // ---------- FORMULÁRIO COM SWEETALERT2 ----------
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    const nome = this.querySelector('input[placeholder="Seu nome completo"]').value.trim();
+                    const email = this.querySelector('input[placeholder="Seu melhor e-mail"]').value.trim();
+                    const mensagem = this.querySelector('textarea').value.trim();
+
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Mensagem enviada com sucesso!',
+                        html: `
+                            <p style="font-size: 1.1rem;">Olá <strong>${nome || 'visitante'}</strong>, muito obrigado pelo contato!</p>
+                            <p style="font-size: 0.95rem; color: #6c757d;">
+                                Em breve retornaremos através do e-mail <strong>${email || 'informado'}</strong>.
+                            </p>
+                            <hr style="margin: 1.2rem 0;" />
+                            <p style="font-size: 0.9rem; color: #6c757d;">
+                                <i class="bi bi-chat-dots" style="color: #c9a96e;"></i> 
+                                Sua mensagem: <em>“${mensagem || '...' }”</em>
+                            </p>
+                        `,
+                        confirmButtonColor: '#c9a96e',
+                        confirmButtonText: 'Entendi',
+                        backdrop: 'rgba(12, 26, 46, 0.6)',
+                        timer: 5000,
+                        timerProgressBar: true,
+                        showClass: {
+                            popup: 'animate__animated animate__fadeInUp'
+                        },
+                        hideClass: {
+                            popup: 'animate__animated animate__fadeOutDown'
+                        }
+                    });
+
+                    this.reset();
+                });
+            }
+
+            // ---------- POPUP AUTOMÁTICO AO CARREGAR ----------
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    const popupEl = document.getElementById('popupWelcome');
+                    if (popupEl) {
+                        const popup = new bootstrap.Modal(popupEl, {
+                            backdrop: true,
+                            keyboard: true
+                        });
+                        popup.show();
+                    }
+                }, 1500);
+            });
+
+            console.log('✅ Site da Dra. Keler Mendes carregado com sucesso!');
+        })();
+    </script>
+</body>
+</html>
